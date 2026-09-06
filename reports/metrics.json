@@ -1,0 +1,92 @@
+{
+  "seed": 42,
+  "dataset": "Iris (scikit-learn bundled copy)",
+  "train_samples": 120,
+  "test_samples": 30,
+  "selection_metric": "training CV macro F1",
+  "selected_model": "logistic_regression",
+  "comparison": [
+    {
+      "model": "majority_baseline",
+      "cv_accuracy": 0.3333333333333333,
+      "cv_accuracy_std": 0.0,
+      "cv_f1_macro": 0.16666666666666666
+    },
+    {
+      "model": "logistic_regression",
+      "cv_accuracy": 0.9583333333333334,
+      "cv_accuracy_std": 0.026352313834736508,
+      "cv_f1_macro": 0.9579707438530969
+    },
+    {
+      "model": "nearest_neighbors",
+      "cv_accuracy": 0.9583333333333334,
+      "cv_accuracy_std": 0.026352313834736508,
+      "cv_f1_macro": 0.9579707438530969
+    },
+    {
+      "model": "random_forest",
+      "cv_accuracy": 0.95,
+      "cv_accuracy_std": 0.0311804782231162,
+      "cv_f1_macro": 0.9494055399937753
+    }
+  ],
+  "test_accuracy": 0.9333333333333333,
+  "baseline_test_accuracy": 0.3333333333333333,
+  "classification_report": {
+    "setosa": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 10.0
+    },
+    "versicolor": {
+      "precision": 0.9,
+      "recall": 0.9,
+      "f1-score": 0.9,
+      "support": 10.0
+    },
+    "virginica": {
+      "precision": 0.9,
+      "recall": 0.9,
+      "f1-score": 0.9,
+      "support": 10.0
+    },
+    "accuracy": 0.9333333333333333,
+    "macro avg": {
+      "precision": 0.9333333333333332,
+      "recall": 0.9333333333333332,
+      "f1-score": 0.9333333333333332,
+      "support": 30.0
+    },
+    "weighted avg": {
+      "precision": 0.9333333333333333,
+      "recall": 0.9333333333333333,
+      "f1-score": 0.9333333333333333,
+      "support": 30.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      10,
+      0,
+      0
+    ],
+    [
+      0,
+      9,
+      1
+    ],
+    [
+      0,
+      1,
+      9
+    ]
+  ],
+  "feature_names": [
+    "sepal length (cm)",
+    "sepal width (cm)",
+    "petal length (cm)",
+    "petal width (cm)"
+  ]
+}

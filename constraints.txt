@@ -1,0 +1,8 @@
+# Versions used for the checked-in seed-42 experiment (Python 3.12).
+joblib==1.6.0
+matplotlib==3.11.1
+numpy==2.5.3
+pandas==2.3.3
+pytest==8.4.2
+scikit-learn==1.9.0
+scipy==1.18.1
